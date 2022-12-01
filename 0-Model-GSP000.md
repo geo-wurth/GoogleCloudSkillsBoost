@@ -4,8 +4,8 @@
 
 Command to create variables needed for this lab
 
-    export REGION=us-east1
-    export ZONE=us-east1-b
+    export REGION=<your region>
+    export ZONE=<your zone>
     export PROJECT_ID=<your project id>
 
 Command to select your project if it was deselected
