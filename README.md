@@ -3,11 +3,11 @@
 Esse repositório tem como objetivo auxiliar na finalização dos laboratórios do google cloud skill boost. É válido registrar que as informações neste repositório não são instrutivas. Os tutoriais do próprio laboratório já são suficientes para o seu entendimento.
 
 # Google Cloud Foundations
-Este é o primeiro programa para desenvolver para o aprendizado do Google Cloud.
+Este é o primeiro programa para desenvolver o aprendizado do Google Cloud.
 
 [Google Cloud Computing Foundations](https://www.cloudskillsboost.google/paths/36?locale=en)
 
-Este programa é composto por 4 trilhas de laboratórios, sendo que no final existe um desafio sem tutorial e 4 cursos complementares.
+Este programa é composto por 4 trilhas de laboratórios, sendo que no final de cada trilha existe um desafio sem tutorial, além de 4 cursos complementares, sendo 1 curso para cada trilha.
 
 **#FICAADICA** Os laboratórios acessados pelo curso costumam cobrar mais créditos do que quando acessado pela trilha do laboratório.
 
