@@ -2,15 +2,23 @@
 
 ## **Variables Preparation**
 
-Command to create variables needed for this lab
+Command to create variables that change every lab
 
     export REGION=<your region>
     export ZONE=<your zone>
     export PROJECT_ID=<your project id>
 
-Command to select your project if it was deselected
+Command to create variables commom to every lab
+
+    export REGION=<your region>
+    export ZONE=<your zone>
+    export PROJECT_ID=<your project id>
+
+Command to set configurations to your cloud shell -- Optional
 
     gcloud config set project $PROJECT_ID
+    gcloud config set compute/region $REGION
+    gcloud config set compute/zone $ZONE
 
 <br>
 
