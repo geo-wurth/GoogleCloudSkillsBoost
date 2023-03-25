@@ -28,7 +28,7 @@ Para que os scripts automáticos sejam executados, é necessário um prepraro m�
     
 6º - Por fim, podemos executar o script para que a magia aconteça
 
-    ./GSP215.sh
+    ./nome_do_arquivo.sh
 
 <br>
 
