@@ -5,13 +5,13 @@ gcloud container clusters get-credentials cluster-backend --zone=$ZONE
 kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:2.0
 kubectl expose deployment hello-server --type=LoadBalancer --port=$APP_PORT
 cat << EOF > startup.sh
-#! /bin/bash
+#!/bin/bash
 apt-get update
 apt-get install -y nginx
 service nginx start
 sed -i -- 's/nginx/Google Cloud Platform - '"\$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
 EOF
-gcloud compute instance-templates create web-server-template --region=$REGION --network=default --machine-type=e2-medium --metadata-from-file startup.sh
+gcloud compute instance-templates create web-server-template --region=$REGION --network=default --machine-type=e2-medium --metadata-from-file startup-script=startup.sh
 gcloud compute instance-groups managed create web-server-group --base-instance-name web-server --size=2 --template=web-server-template --region=$REGION
 gcloud compute instance-groups managed set-named-ports web-server-group --named-ports=http:80 --region=$REGION
 gcloud compute firewall-rules create $FW_RULE_NAME --allow tcp:80 --network default
