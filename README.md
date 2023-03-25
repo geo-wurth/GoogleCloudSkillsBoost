@@ -1,4 +1,4 @@
-# Google Cloud Skill Boost Guide
+# Google Cloud Skills Boost Guide
 
 Esse repositório tem como objetivo auxiliar na finalização dos laboratórios do google cloud skills boost. É válido registrar que as informações neste repositório não são instrutivas. Os tutoriais dos próprios laboratórios já são suficientes para o seu entendimento, além dos cursos que apresentam toda a teoria necessária para sua finalização.
 
