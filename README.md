@@ -1,6 +1,6 @@
 # Google Cloud Skill Boost Guide
 
-Esse repositório tem como objetivo auxiliar na finalização dos laboratórios do google cloud skill boost. É válido registrar que as informações neste repositório não são instrutivas. Os tutoriais do próprio laboratório já são suficientes para o seu entendimento.
+Esse repositório tem como objetivo auxiliar na finalização dos laboratórios do google cloud skills boost. É válido registrar que as informações neste repositório não são instrutivas. Os tutoriais dos próprios laboratórios já são suficientes para o seu entendimento, além dos cursos que apresentam toda a teoria necessária para sua finalização.
 
 # Google Cloud Foundations
 Este é o primeiro programa para desenvolver o aprendizado do Google Cloud.
