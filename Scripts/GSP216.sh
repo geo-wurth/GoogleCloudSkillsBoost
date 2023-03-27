@@ -1,5 +1,5 @@
 #!/bin/bash
-gcloud compute forwarding-rules create my-ilib-forwarding-rule --address my-ilb-ip --load-balancing-scheme INTERNAL --ip-version IPV4 --region us-central1 --backend-service my-ilib --ports 80 --network my-internal-app --subnet subnet-b
+gcloud compute firewall-rules create app-allow-http --action ALLOW --network my-internal-app --rules tcp:80 --source-ranges 0.0.0.0/0 --target-tags lb-backend
 gcloud compute firewall-rules create app-allow-health-check --action ALLOW --rules tcp --source-ranges 130.211.0.0/22,35.191.0.0/16 --target-tags lb-backend
 gcloud compute instance-templates create instance-template-1 --machine-type f1-micro --region us-central1 --network-interface network=my-internal-app,subnet=subnet-a --tags lb-backend --metadata startup-script-url=gs://cloud-training/gcpnet/ilb/startup.sh
 gcloud compute instance-templates create instance-template-2 --machine-type f1-micro --region us-central1 --network-interface network=my-internal-app,subnet=subnet-b --tags lb-backend --metadata startup-script-url=gs://cloud-training/gcpnet/ilb/startup.sh
