@@ -7,11 +7,12 @@ Para que os scripts sejam executados, é necessário um prepraro mínimo do clou
     git clone https://github.com/geo-wurth/GoogleCloudSkillsBoost.git
     cd GoogleCloudSkillsBoost/Scripts
 
-2º - Executar os exports obrigatórios do laboratório para preparar as variáveis individuis de cada lab
+2º - Executar os exports obrigatórios do laboratório para preparar as variáveis individuais de cada lab
 
     export REGION=<your region>
     export ZONE=<your zone>
     export PROJECT_ID=<your project id>
+    export FILE_NAME=<lab code ex 'GSP215'>
 
 3º - Executar o código para desativar os questionamentos do prompt
 
