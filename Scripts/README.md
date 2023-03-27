@@ -47,4 +47,3 @@ O exemplo abaixo mostra um código executado para o laboratório GSP215, onde os
     chmod u+x $FILE_NAME
     sed -i -e 's/\r$//' $FILE_NAME
     ./$FILE_NAME
-
