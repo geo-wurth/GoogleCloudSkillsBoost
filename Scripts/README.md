@@ -2,13 +2,10 @@
 
 Para que os scripts sejam executados, é necessário um prepraro mínimo do cloud shell.
 
-1º - Enviar o arquivo para a vm do cloud shell pelo botão de upload
+1º - Clonar esse repositório e acessar a pasta de scripts
 
-    Enviar (upload) o arquivo para o cloud shell
->
-    export FILE_NAME=<nome do arquivo com .sh>
-    ls #para verificar a presença do arquivo
-    cat $FILE_NAME #para verificar seu conteúdo
+    git clone https://github.com/geo-wurth/GoogleCloudSkillsBoost.git
+    cd GoogleCloudSkillsBoost/Scripts
 
 2º - Executar os exports obrigatórios do laboratório para preparar as variáveis individuis de cada lab
 
@@ -40,9 +37,9 @@ Para que os scripts sejam executados, é necessário um prepraro mínimo do clou
 
 O exemplo abaixo mostra um código executado para o laboratório GSP215, onde os exports obrigatórios são a região e o project id.
 
-    export FILE_NAME=GSP215.sh
     export REGION=us-east1
     export PROJECT_ID=qwiklabs-gcp-00-e010438f4021
+    export FILE_NAME=GSP215.sh
     gcloud config set disable_prompts true
     chmod u+x $FILE_NAME
     sed -i -e 's/\r$//' $FILE_NAME
